@@ -1,36 +1,41 @@
-# Face Sketch to Image Generation using GAN
+# Suspecto:  A Crime Detection System using NLP and cGANs
 
-An image generation system using GAN to turn face sketches into realistic photos
 
-## Install requirements
-pip install -r requirements.txt
+##  Overview
 
-## Keras-contrib installation
-- git clone https://www.github.com/keras-team/keras-contrib.git
-- cd keras-contrib
-- python setup.py install
+**Suspecto** is an AI-powered crime detection system that generates realistic human-like facial images based on vague or partial descriptions, such as those given by eyewitnesses. Combining the strengths of **Natural Language Processing (NLP)** and **Conditional Generative Adversarial Networks (cGANs)**, this project bridges the gap between language and visual representation in the realm of criminal investigation.
 
-Or you can refer to this link https://medium.com/@kegui/how-to-install-keras-contrib-7b75334ab742
+##  Motivation
 
-## Data Augmentation
-First of all, you need to do data augmentation using this [notebook](https://github.com/Malikanhar/Sketch-to-Image/blob/master/Data%20Augmentation.ipynb)
+In real-world crime investigations, eyewitnesses often provide imprecise or fragmented descriptions of suspects. Traditional sketch artists rely heavily on interpretation, which may introduce bias or inaccuracy. **Suspecto** aims to automate and enhance this process using AI, reducing human error and accelerating investigations.
 
-## Start Training
-Start training GAN model with this [notebook](https://github.com/Malikanhar/Sketch-to-Image/blob/master/ContextualGAN.ipynb)
+##  Technologies Used
 
-## Performance Measurement
-Calculate SSIM (Structural Similarity Index) and Verification Accuracy (L2-norm) using this [notebook](https://github.com/Malikanhar/Sketch-to-Image/blob/master/Compute%20SSIM%20and%20L2-norm.ipynb)
+- **Natural Language Processing (NLP)** – for parsing and interpreting descriptive input.
+- **Conditional GAN (cGAN)** – to generate human facial images based on features extracted from text.
+- **PyTorch / TensorFlow** – for building and training deep learning models.
+- **Spacy / NLTK / BERT** – for text preprocessing and semantic feature extraction.
+- **OpenCV / Matplotlib** – for image processing and visualization.
 
-## Testing
-Generate single image with this [notebook](https://github.com/Malikanhar/Face-Sketch-to-Image-Generation-using-GAN/blob/master/Predict%20Image.ipynb)
+##  Features
 
-## References
-<a id="1">[1]</a> 
-X. Wang and X. Tang. (2009).
-Face Photo-Sketch Synthesis and Recognition. 
-IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), 31(11), 1955-1967.
+- 🧾 **Text-to-Face Generation**: Converts vague or detailed suspect descriptions into photo-realistic images.
+- 🧠 **Deep NLP Understanding**: Extracts semantic features like age, gender, emotion, facial attributes from textual input.
+- 🧬 **Conditional GAN Backbone**: Ensures generated faces align with the extracted features.
+- 🧪 **Interactive Demo Interface**: Accepts natural language input and returns generated suspect images.
 
-<a id="2">[2]</a>
-W. Zhang, X. Wang and X. Tang. (2011).
-Coupled Information-Theoretic Encoding for Face Photo-Sketch Recognition.
-Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR).
+## Training Result 
+
+### 🔹 Epoch 0
+![Epoch 0 Output](../Suspecto_Crime_Detection_System/Images/Picture1.png)
+
+### 🔹 Epoch 1
+![Epoch 1 Output](images/Picture2.png)
+
+### 🔹 Epoch 17
+![Epoch 17 Output](images/Picture3.png)
+
+
+## Output
+
+![Output](images/Picture4.png)
