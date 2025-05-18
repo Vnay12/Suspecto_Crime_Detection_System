@@ -27,15 +27,15 @@ In real-world crime investigations, eyewitnesses often provide imprecise or frag
 ## Training Result 
 
 ### 🔹 Epoch 0
-![Epoch 0 Output](../Suspecto_Crime_Detection_System/Images/Picture1.png)
+![Epoch 0 Output](Images/Picture1.png)
 
 ### 🔹 Epoch 1
-![Epoch 1 Output](images/Picture2.png)
+![Epoch 1 Output](Images/Picture2.png)
 
 ### 🔹 Epoch 17
-![Epoch 17 Output](images/Picture3.png)
+![Epoch 17 Output](Images/Picture3.png)
 
 
 ## Output
 
-![Output](images/Picture4.png)
+![Output](Images/Picture4.png)
